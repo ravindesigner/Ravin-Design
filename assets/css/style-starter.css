@@ -86,9 +86,8 @@ html {
 }
 
 .imgAbout {
-  margin-left: 150px;
-  margin-top: -50px;
-  width: 500px;
+  margin: auto;
+  width: 90%;
 }
 
 @keyframes fadeInImg {
@@ -658,37 +657,16 @@ pre {
   margin-left: auto; }
   @media (min-width: 576px) {
     .container {
-      max-width: 540px; } 
-    
-      .imgAbout {
-        margin-left: 0px;
-        margin-top: 0px;
-        width: 500px;
-      } }
+      max-width: 540px; } }
   @media (min-width: 768px) {
     .container {
-      max-width: 720px; }
-      .imgAbout {
-        margin-left: 0px;
-        margin-top: 0px;
-        width: 500px;
-      } }
+      max-width: 720px; } }
   @media (min-width: 992px) {
     .container {
-      max-width: 960px; }
-      .imgAbout {
-        margin-left: 150px;
-        margin-top: -50px;
-        width: 500px;
-      } }
+      max-width: 960px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1140px; }
-      .imgAbout {
-        margin-left: 150px;
-        margin-top: -50px;
-        width: 500px;
-      } }
+      max-width: 1140px; } }
 
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
   width: 100%;
