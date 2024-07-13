@@ -17,6 +17,7 @@
 
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style-starter.css">
+
 </head>
 
 <body>
@@ -24,7 +25,7 @@
   <header id="site-header" class="fixed-top">
     <div class="container">
       <nav class="navbar navbar-expand-lg stroke">
-        <a class="navbar-brand fadecenter" href="index.html"><img style="border-radius: 0%;" width="30px"
+        <a class="navbar-brand fadecenter" href="index.html#home"><img style="border-radius: 0%;" width="30px"
             src="assets/images/logo.png" alt="Ravin Design"></a>
         <button class="navbar-toggler fadecenter collapsed bg-gradient" type="button" data-toggle="collapse"
           data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
@@ -36,21 +37,46 @@
         <!-- menu -->
         <div class="collapse navbar-collapse fadecenter" id="navbarTogglerDemo02">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item @@portfolio__active">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item @@contact__active">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item @@about__active">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="pricesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Home 
+                  <!-- Inline SVG Icon -->
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M1.5 6l6 6 6-6H1.5z"/>
+                  </svg>
+                </a>
+                  <div class="dropdown-menu" aria-labelledby="clientsDropdown">
+                    <a class="dropdown-item" href="index.html#home">Home</a>
+                    <a class="dropdown-item" href="index.html#portfolio">Who am i?</a>
+                    <a class="dropdown-item" href="index.html#my_cv">My CV</a>
+                    <a class="dropdown-item" href="index.html#services">Services</a>
+                    <a class="dropdown-item" href="index.html#clients">Clients</a>
+                    <a class="dropdown-item" href="index.html#hire_me">Hire Me</a>
+                  </div>
+              </li>
+              <li class="nav-item @@portfolio__active">
+                  <a class="nav-link" href="portfolio.html#myportfolio">Portfolio</a>
+              </li>
+              <li class="nav-item @@contact__active">
+                  <a class="nav-link" href="contact.html#contact">Contact</a>
+              </li>
+              <li class="nav-item dropdown @@about__active">
+                <a class="nav-link dropdown-toggle" href="#" id="pricesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About
+                  <!-- Inline SVG Icon -->
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M1.5 6l6 6 6-6H1.5z"/>
+                  </svg>
+                </a>
+                  <div class="dropdown-menu" aria-labelledby="clientsDropdown">
+                    <a class="dropdown-item" href="about.html#about">About Me</a>
+                    <a class="dropdown-item" href="about.html#skills">Skills</a>
+                    <a class="dropdown-item" href="about.html#languages">Languages</a>
+                    <a class="dropdown-item" href="about.html#experiences">Experiences</a>
+                  </div>
+              </li>
           </ul>
-        </div>
-        <!-- toggle switch for light and dark theme -->
+      </div><!-- toggle switch for light and dark theme -->
         <div class="mobile-position fadecenter">
           <nav class="navigation">
             <div class="theme-switch-wrapper">
@@ -149,7 +175,7 @@
   <!-- //home page about section -->
 
   <!-- home page second section -->
-  <div class="py-5 w3l-resume">
+  <div id="my_cv" class="py-5 w3l-resume">
     <div class="container py-lg-5 py-3 lleft">
       <h5 class="title-small mb-2">My CV</h5>
       <h3 class="title-big mb-4">I Would Love to make your Ideas real</h3>
@@ -182,7 +208,7 @@
                     </div>
                     <h4 class="number">01</h4>
                     <h4><a style="text-align: center;" href="portfolio.html"><br>Logo Design</a><br><br></h4>
-                    <h4 class="price">20000IQD - 25000IQD</h4>
+                    <h4 class="price">20,000IQD - 25,000IQD</h4>
                     <a href="contact.html" style="text-align: center;">
                       <div class="bbutton">Order Now &nbsp;<i class="fa fa-comment"></i></div>
                     </a>
@@ -198,7 +224,39 @@
                     </div>
                     <h4 class="number">02</h4>
                     <h4><a style="text-align: center;" href="portfolio.html"><br>Social Media Design</a><br><br></h4>
-                    <h4 class="price">15000IQD</h4>
+                    <h4 class="price">15,000IQD</h4>
+                    <a href="contact.html" style="text-align: center;">
+                      <div class="bbutton">Order Now &nbsp;<i class="fa fa-comment"></i></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="card">
+                  <div class="box-wrap">
+                    <div class="icon">
+                      <span class="fa fa-laptop"></span>
+                    </div>
+                    <h4 class="number">03</h4>
+                    <h4><a style="text-align: center;" href="portfolio.html"><br>10 Social Media Design</a><br><br></h4>
+                    <h4 class="price">130,000IQD</h4>
+                    <a href="contact.html" style="text-align: center;">
+                      <div class="bbutton">Order Now &nbsp;<i class="fa fa-comment"></i></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="card">
+                  <div class="box-wrap">
+                    <div class="icon">
+                      <span class="fa fa-bar-chart"></span>
+                    </div>
+                    <h4 class="number">04</h4>
+                    <h4><a style="text-align: center;" href="portfolio.html"><br>Infographic Design</a><br><br></h4>
+                    <h4 class="price">15,000IQD</h4>
                     <a href="contact.html" style="text-align: center;">
                       <div class="bbutton">Order Now &nbsp;<i class="fa fa-comment"></i></div>
                     </a>
@@ -212,9 +270,9 @@
                     <div class="icon">
                       <span class="fa fa-address-card"></span>
                     </div>
-                    <h4 class="number">03</h4>
+                    <h4 class="number">05</h4>
                     <h4><a style="text-align: center;" href="portfolio.html"><br>Business Card Design</a><br><br></h4>
-                    <h4 class="price">15000IQD</h4>
+                    <h4 class="price">15,000IQD</h4>
                     <a href="contact.html" style="text-align: center;">
                       <div class="bbutton">Order Now &nbsp;<i class="fa fa-comment"></i></div>
                     </a>
@@ -228,9 +286,9 @@
                     <div class="icon">
                       <span class="fa fa-id-card"></span>
                     </div>
-                    <h4 class="number">04</h4>
+                    <h4 class="number">06</h4>
                     <h4><a style="text-align: center;" href="portfolio.html"><br>CV Design</a><br><br></h4>
-                    <h4 class="price">20000IQD</h4>
+                    <h4 class="price">20,000IQD</h4>
                     <a href="contact.html" style="text-align: center;">
                       <div class="bbutton">Order Now &nbsp;<i class="fa fa-comment"></i></div>
                     </a>
@@ -244,9 +302,41 @@
                     <div class="icon">
                       <span class="fa fa-book"></span>
                     </div>
-                    <h4 class="number">05</h4>
+                    <h4 class="number">07</h4>
                     <h4><a style="text-align: center;" href="portfolio.html"><br>Book Cover Design</a><br><br></h4>
-                    <h4 class="price">20000IQD</h4>
+                    <h4 class="price">20,000IQD</h4>
+                    <a href="contact.html" style="text-align: center;">
+                      <div class="bbutton">Order Now &nbsp;<i class="fa fa-comment"></i></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="card">
+                  <div class="box-wrap">
+                    <div class="icon">
+                      <span class="fa fa-paint-brush"></span>
+                    </div>
+                    <h4 class="number">08</h4>
+                    <h4><a style="text-align: center;" href="portfolio.html"><br>Digital Art Design</a><br><br></h4>
+                    <h4 class="price">30,000IQD</h4>
+                    <a href="contact.html" style="text-align: center;">
+                      <div class="bbutton">Order Now &nbsp;<i class="fa fa-comment"></i></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="card">
+                  <div class="box-wrap">
+                    <div class="icon">
+                      <span class="fa fa-youtube-play"></span>
+                    </div>
+                    <h4 class="number">09</h4>
+                    <h4><a style="text-align: center;" href="portfolio.html"><br>YouTube banner Design</a><br><br></h4>
+                    <h4 class="price">15,000IQD</h4>
                     <a href="contact.html" style="text-align: center;">
                       <div class="bbutton">Order Now &nbsp;<i class="fa fa-comment"></i></div>
                     </a>
@@ -260,9 +350,9 @@
                     <div class="icon">
                       <span class="fa fa-file-image-o"></span>
                     </div>
-                    <h4 class="number">06</h4>
-                    <h4><a style="text-align: center;" href="portfolio.html"><br>Banner & Cover Design</a><br><br></h4>
-                    <h4 class="price">15000IQD</h4>
+                    <h4 class="number">10</h4>
+                    <h4><a style="text-align: center;" href="portfolio.html"><br>Cover Design</a><br><br></h4>
+                    <h4 class="price">15,000IQD</h4>
                     <a href="contact.html" style="text-align: center;">
                       <div class="bbutton">Order Now &nbsp;<i class="fa fa-comment"></i></div>
                     </a>
@@ -276,9 +366,9 @@
                     <div class="icon">
                       <span class="fa fa-shopping-bag"></span>
                     </div>
-                    <h4 class="number">07</h4>
+                    <h4 class="number">11</h4>
                     <h4><a style="text-align: center;" href="portfolio.html"><br>Paper Bag Design</a><br><br></h4>
-                    <h4 class="price">15000IQD</h4>
+                    <h4 class="price">15,000IQD</h4>
                     <a href="contact.html" style="text-align: center;">
                       <div class="bbutton">Order Now &nbsp;<i class="fa fa-comment"></i></div>
                     </a>
@@ -292,10 +382,27 @@
                     <div class="icon">
                       <span class="fa fa-map"></span>
                     </div>
-                    <h4 class="number">08</h4>
-                    <h4><a style="text-align: center;" href="portfolio.html"><br>Brochure - Roll up Design</a><br><br>
+                    <h4 class="number">12</h4>
+                    <h4><a style="text-align: center;" href="portfolio.html"><br>Roll up Design</a><br><br>
                     </h4>
-                    <h4 class="price">25000IQD - 30000IQD</h4>
+                    <h4 class="price">25,000IQD</h4>
+                    <a href="contact.html" style="text-align: center;">
+                      <div class="bbutton">Order Now &nbsp;<i class="fa fa-comment"></i></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="card">
+                  <div class="box-wrap">
+                    <div class="icon">
+                      <span class="fa fa-map"></span>
+                    </div>
+                    <h4 class="number">13</h4>
+                    <h4><a style="text-align: center;" href="portfolio.html"><br>Brochure Design</a><br><br>
+                    </h4>
+                    <h4 class="price">25,000IQD</h4>
                     <a href="contact.html" style="text-align: center;">
                       <div class="bbutton">Order Now &nbsp;<i class="fa fa-comment"></i></div>
                     </a>
@@ -309,9 +416,9 @@
                     <div class="icon">
                       <span class="fa fa-window-maximize"></span>
                     </div>
-                    <h4 class="number">09</h4>
+                    <h4 class="number">14</h4>
                     <h4><a style="text-align: center;" href="portfolio.html"><br>Flex Design</a><br><br></h4>
-                    <h4 class="price">30000IQD</h4>
+                    <h4 class="price">30,000IQD</h4>
                     <a href="contact.html" style="text-align: center;">
                       <div class="bbutton">Order Now &nbsp;<i class="fa fa-comment"></i></div>
                     </a>
@@ -325,9 +432,25 @@
                     <div class="icon">
                       <span class="fa fa-file"></span>
                     </div>
-                    <h4 class="number">10</h4>
+                    <h4 class="number">15</h4>
                     <h4><a style="text-align: center;" href="portfolio.html"><br>Writing Exam Sheet</a><br><br></h4>
-                    <h4 class="price">10000IQD</h4>
+                    <h4 class="price">10,000IQD</h4>
+                    <a href="contact.html" style="text-align: center;">
+                      <div class="bbutton">Order Now &nbsp;<i class="fa fa-comment"></i></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="card">
+                  <div class="box-wrap">
+                    <div class="icon">
+                      <span class="fa fa-cutlery"></span>
+                    </div> 
+                    <h4 class="number">16</h4>
+                    <h4><a style="text-align: center;" href="portfolio.html"><br>Menu Design</a><br><br></h4>
+                    <h4 class="price">20,000IQD</h4>
                     <a href="contact.html" style="text-align: center;">
                       <div class="bbutton">Order Now &nbsp;<i class="fa fa-comment"></i></div>
                     </a>
@@ -341,7 +464,7 @@
                     <div class="icon">
                       <span class="fa fa-area-chart"></span>
                     </div>
-                    <h4 class="number">11</h4>
+                    <h4 class="number">17</h4>
                     <h4><a style="text-align: center;" href="portfolio.html"><br>Social media management</a><br><br>
                     </h4>
                     <h4 class="price">during conversation</h4>
@@ -358,16 +481,17 @@
                     <div class="icon">
                       <span class="fa fa-gift"></span>
                     </div>
-                    <h4 class="number">12</h4>
+                    <h4 class="number">18</h4>
                     <h4><a style="text-align: center;" href="portfolio.html"><br><b>Offer</b>(Logo, Cover)
                         Design</a><br><br></h4>
-                    <h4 class="price">30000IQD</h4>
+                    <h4 class="price">30,000IQD</h4>
                     <a href="contact.html" style="text-align: center;">
                       <div class="bbutton">Order Now &nbsp;<i class="fa fa-comment"></i></div>
                     </a>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -553,7 +677,7 @@
   <!-- //testimonials -->
 
   <!-- freelance hire me -->
-  <section class="w3l-grid-quote text-center py-5 ccenter">
+  <section id="hire_me" class="w3l-grid-quote text-center py-5 ccenter">
     <div class="container py-3">
       <h6 class="title-small">Get in touch</h6>
       <h3 class="title-big mb-md-5 mb-4">Let's start a Project! Hire Me.</h3>

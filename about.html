@@ -21,7 +21,7 @@
   <header id="site-header" class="fixed-top">
     <div class="container">
       <nav class="navbar navbar-expand-lg stroke">
-        <a class="navbar-brand fadecenter" href="index.html"><img style="border-radius: 0%;" width="30px"
+        <a class="navbar-brand fadecenter" href="index.html#home"><img style="border-radius: 0%;" width="30px"
             src="assets/images/logo.png" alt="Ravin Design"></a>
         <button class="navbar-toggler fadecenter collapsed bg-gradient" type="button" data-toggle="collapse"
           data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
@@ -33,23 +33,46 @@
         <!-- menu -->
         <div class="collapse navbar-collapse fadecenter" id="navbarTogglerDemo02">
           <ul class="navbar-nav ml-auto">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item @@home__active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
+            <li class="nav-item dropdown @@home__active">
+              <a class="nav-link dropdown-toggle" href="#" id="pricesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Home 
+                <!-- Inline SVG Icon -->
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M1.5 6l6 6 6-6H1.5z"/>
+                </svg>
+              </a>
+                <div class="dropdown-menu" aria-labelledby="clientsDropdown">
+                  <a class="dropdown-item" href="index.html#home">Home</a>
+                  <a class="dropdown-item" href="index.html#portfolio">Who am i?</a>
+                  <a class="dropdown-item" href="index.html#my_cv">My CV</a>
+                  <a class="dropdown-item" href="index.html#services">Services</a>
+                  <a class="dropdown-item" href="index.html#clients">Clients</a>
+                  <a class="dropdown-item" href="index.html#hire_me">Hire Me</a>
+                </div>
+            </li>
               <li class="nav-item @@portfolio__active">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                  <a class="nav-link" href="portfolio.html#myportfolio">Portfolio</a>
               </li>
               <li class="nav-item @@contact__active">
-                <a class="nav-link" href="contact.html">Contact</a>
+                  <a class="nav-link" href="contact.html#contact">Contact</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="about.html">About</a>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="pricesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About
+                  <!-- Inline SVG Icon -->
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M1.5 6l6 6 6-6H1.5z"/>
+                  </svg>
+                </a>
+                  <div class="dropdown-menu" aria-labelledby="clientsDropdown">
+                    <a class="dropdown-item" href="about.html#about">About Me</a>
+                    <a class="dropdown-item" href="about.html#skills">Skills</a>
+                    <a class="dropdown-item" href="about.html#languages">Languages</a>
+                    <a class="dropdown-item" href="about.html#experiences">Experiences</a>
+                  </div>
               </li>
-            </ul>
           </ul>
-        </div>
-        <!-- toggle switch for light and dark theme -->
+      </div><!-- toggle switch for light and dark theme -->
         <div class="mobile-position fadecenter">
           <nav class="navigation">
             <div class="theme-switch-wrapper">
@@ -70,12 +93,12 @@
   <!-- //header -->
 
   <!-- about breadcrumb -->
-  <section class="w3l-about-breadcrumb text-center">
+  <section id="about" class="w3l-about-breadcrumb text-center">
     <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4 ccenter">
       <div class="container py-2">
         <h2 class="title">About</h2>
         <ul class="breadcrumbs-custom-path mt-2">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#home">Home</a></li>
           <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> About </li>
         </ul>
       </div>
@@ -213,7 +236,7 @@
   <!-- //about page about section -->
 
   <!-- about page third section -->
-  <section class="w3l-content-6 py-5">
+  <section id="skills" class="w3l-content-6 py-5">
     <div class="content-6-mian py-lg-5 py-md-4">
       <div class="container">
         <div class="content-info-in row">
@@ -282,7 +305,7 @@
   <!-- about page third section -->
 
   <!-- Start Language -->
-  <section class="w3l-content-6 py-5">
+  <section id="languages" class="w3l-content-6 py-5">
     <div class="content-6-mian py-lg-5 py-md-4">
       <div class="container">
         <div class="content-info-in row">
@@ -347,11 +370,11 @@
   <!-- //end Language -->
 
   <!-- achievements block -->
-  <section class="w3l-services">
+  <section id="experiences" class="w3l-services">
     <div class="w3l-achievements py-5" id="services">
       <div class="container py-lg-5">
-        <h5 class="title-small text-center ccenter">Experience</h5>
-        <h3 class="title-big text-center mb-sm-5 mb-4 ccenter">Personal Experience</h3>
+        <h5 class="title-small text-center ccenter">Experiences</h5>
+        <h3 class="title-big text-center mb-sm-5 mb-4 ccenter">Personal Experiences</h3>
         <div class="row">
           <div class="col-lg-666 item">
             <div class="card">
@@ -361,7 +384,7 @@
                 <p><b>2021 - 2022 &nbsp;&nbsp;</b> Worked at <b><a target="_blank" href="https://www.kurddoblazh.com/">kurddoblazh.com</a></b></p>
                 <p><b>2021 - 2023 &nbsp;&nbsp;</b> Worked at <b><a target="_blank" href="https://www.facebook.com/AnimeDolphin">Anime Dolphin</a></b></p>
                 <p><b>2022 &nbsp;&nbsp;&emsp;&emsp;&emsp;&nbsp;</b> Won 3rd certificate at <b><a target="_blank" href="https://www.facebook.com/Dr.Abdul.Wahid.Official.page">Dr.AbdulWahid</a></b></p>
-                <p><b>2022 - <b>now</b> &nbsp;&nbsp;&nbsp;&nbsp;</b> Working at <b><a target="_blank" href="https://www.instagram.com/zrebar.cosmetic/">Zrebar Cosmetic</a></b></p>
+                <p><b>2022 - <b style="background-color: #3399cc; color: white; padding-left: 5px; padding-right: 5px;padding-bottom: 2px; border-radius: 5px;">now</b> &nbsp;&nbsp;</b> Working at <b><a target="_blank" href="https://www.instagram.com/zrebar.cosmetic/">Zrebar Cosmetic</a></b></p>
                 <p><b>2023 &nbsp;&nbsp;&emsp;&emsp;&emsp;&nbsp;</b> Worked at <b><a target="_blank" href="https://www.instagram.com/bekhwd/">Bekhwd</a></b></p>
                 <p><b>2023 &nbsp;&nbsp;&emsp;&emsp;&emsp;&nbsp;</b> Worked at <b><a target="_blank" href="https://www.instagram.com/cementadvertising/">Cement Advertising</a></b></p>
                 <p><b>2023 &nbsp;&nbsp;&emsp;&emsp;&emsp;&nbsp;</b> Worked at <b><a target="_blank" href="https://www.instagram.com/radozorganization/">Radoz Organization</a></b></p>
